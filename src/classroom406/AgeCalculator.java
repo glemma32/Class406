@@ -1,5 +1,6 @@
 package classroom406;
 
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -10,7 +11,6 @@ public class AgeCalculator {
 		
 		char X,y;
 		int day,month,birthyear,age;
-		int currentYear=0;
 		
 		
 		
@@ -26,10 +26,12 @@ public class AgeCalculator {
 		Scanner yearInput = new Scanner(System.in);
 		birthyear =  yearInput.nextInt();
 		
-		currentYear= new Date().getFullYear();
+		Calendar now = Calendar.getInstance();
+		int currentYear = now.get(Calendar.YEAR); 
 		
+		age = currentYear-birthyear;
+		System.out.println("You are "+ age +" years old");
 		
-
-	}
+		}
 
 }
