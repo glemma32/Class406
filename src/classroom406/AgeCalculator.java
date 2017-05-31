@@ -9,9 +9,7 @@ public class AgeCalculator {
 		// TODO Auto-generated method stub
 	
 		int day,month,birthyear,age;
-		
-		
-		
+				
 		System.out.println("Enter your date of birth");
 		System.out.println("Enter the day");
 		Scanner dayInput = new Scanner(System.in);
