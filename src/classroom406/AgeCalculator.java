@@ -14,11 +14,12 @@ public class AgeCalculator {
 		System.out.println("Enter the day");
 		Scanner dayInput = new Scanner(System.in);
 		day =  dayInput.nextInt();
+		
 		System.out.println("Enter the month");
 		Scanner monthInput = new Scanner(System.in);
 		month =  monthInput.nextInt();
-		System.out.println("Enter the year");
 		
+		System.out.println("Enter the year");
 		Scanner yearInput = new Scanner(System.in);
 		birthyear =  yearInput.nextInt();
 		
